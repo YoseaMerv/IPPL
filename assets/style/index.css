@@ -31,9 +31,14 @@
 }
 
 .image-container img {
-  max-width: 100%;
+  margin-left: 100px;
+  max-width: 60%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .top h1 {

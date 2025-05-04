@@ -19,7 +19,7 @@ session_start();
   <div class="top">
     <div class="about-header">
       <hr class="line1">
-      <span class="black-text">ABOUT US</span>
+      <span class="black-text">Tentang Kami</span>
       <hr class="line1">
       <span class="Angkringan-Sakinih">Angkringan Sedulur</span><br>
     </div>

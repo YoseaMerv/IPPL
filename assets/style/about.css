@@ -28,7 +28,7 @@ body {
 .line1 {
   text-align: left;
   display: block;
-  width: 100px;
+  width: 150px;
   border: 1px solid rgba(173, 94, 0, 1);
 }
 
@@ -56,9 +56,10 @@ body {
 /* Gambar angkringan */
 img[alt="angkringan"] {
   position: absolute;
-  top: 28%;
+  top: 20%;
+  left: 700px;
   right: 50px;
-  width: 570px;
+  max-width: 700px;
   background-color: transparent;
 }
 

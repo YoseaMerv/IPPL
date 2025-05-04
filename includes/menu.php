@@ -51,7 +51,7 @@ $result = mysqli_query($db, $sql);
           <div class="price">Rp. <?= number_format($row['harga'], 0, ',', '.') ?></div>
           <form action="../includes/keranjang.php" method="post">
             <input type="hidden" name="id_menu" value="<?= $row['id_menu'] ?>">
-            <button type="submit" class="order-btn">Order Now</button>
+            <button type="submit" class="order-btn">Pesan Sekarang</button>
           </form>
         </div>
       <?php endwhile; ?>
