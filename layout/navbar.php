@@ -12,14 +12,13 @@ $isLoggedIn = isset($_SESSION['user_id']);
 </head>
 
 <body>
-    <!-- Navbar -->
     <div class="navbar">
         <ul>
             <li class="nav-home"><a href="/index.php">Beranda</a></li>
             <li class="nav-about"><a href="/includes/about.php">About</a></li>
             <li class="nav-menu"><a href="/includes/menu.php">Menu</a></li>
             <?php if ($isLoggedIn): ?>
-                <li class="logout"><a href="/server/logout.php">Logout</a></li>
+                <li class="nav-profile"><a href="/includes/profile.php">Profil</a></li>
             <?php else: ?>
                 <li class="login"><a href="/server/login.php">Login</a></li>
             <?php endif; ?>

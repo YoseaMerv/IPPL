@@ -1,0 +1,216 @@
+/* assets/style/profile.css */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f6f8; /* Slightly different light grey */
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Ensure no default body margin */
+}
+
+.profile-container {
+    flex: 1;
+    padding: 30px 40px; /* Adjusted padding */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    margin: 40px auto; /* More top/bottom margin */
+    max-width: 1000px; /* Slightly wider */
+    width: 90%;
+}
+
+.profile-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Darker, professional blue/grey */
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 3px solid #F58706; /* Orange accent line */
+    padding-bottom: 15px;
+}
+
+/* User Details Section */
+.user-details {
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 8px;
+    border: 1px solid #e0e0e0; /* Subtle border */
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.05); / / Optional: subtle shadow if desired */
+}
+
+.user-details h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #F58706; /* Orange color for this heading */
+    font-weight: 600;
+}
+
+.user-details p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.user-details p strong {
+    color: #333;
+    font-weight: 600; /* Bolder */
+    min-width: 140px; /* Align keys */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Transaction History Section */
+.transaction-history-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #F58706; /* Orange for consistency */
+    font-weight: 600;
+}
+
+/* Table Styling (enhanced from keranjang.css) */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Subtle shadow for table */
+    border-radius: 8px; /* Rounded corners for the table wrapper */
+    overflow: hidden; /* Important for border-radius on table */
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 12px 15px;
+    border: none; /* Remove individual cell borders for a cleaner look with row borders */
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8; /* Light border for rows */
+}
+
+.cart-table th {
+    background-color: #2c3e50; /* Dark header background */
+    color: #ffffff;
+    font-weight: 600; /* Bolder headers */
+    font-size: 15px;
+}
+
+.cart-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly off-white for even rows */
+}
+.cart-table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+.cart-table tr:last-child td {
+    border-bottom: none; /* No border for the last row */
+}
+
+.cart-table tr:hover {
+    background-color: #f0f5fa; /* Hover effect for rows */
+}
+
+/* Specific column alignments */
+.cart-table th:nth-child(1), .cart-table td:nth-child(1) { width: 18%; } /* Tanggal */
+.cart-table th:nth-child(2), .cart-table td:nth-child(2) { text-align: center; width: 12%; } /* ID Pesanan */
+.cart-table th:nth-child(3), .cart-table td:nth-child(3) { width: 30%; } /* Menu */
+.cart-table th:nth-child(4), .cart-table td:nth-child(4) { text-align: center; width: 12%; } /* Jumlah Item */
+.cart-table th:nth-child(5), .cart-table td:nth-child(5) { text-align: right; width: 16%; } /* Total Harga */
+.cart-table th:nth-child(6), .cart-table td:nth-child(6) { text-align: center; width: 12%; } /* Status */
+
+/* No History Message */
+.no-history {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Logout Button Container */
+.logout-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e74c3c; /* A distinct red for logout */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logout-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .profile-container h1 {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+
+    .user-details {
+        padding: 20px;
+    }
+    .user-details h2, .transaction-history-title {
+        font-size: 20px;
+    }
+    .user-details p strong {
+        display: block; /* Stack strong and value on small screens */
+        min-width: auto;
+        margin-bottom: 3px;
+    }
+
+    .cart-table {
+        font-size: 14px; /* Smaller font for table on mobile */
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 10px 8px;
+    }
+    
+    /* For very small screens, you might need to make table scrollable */
+    .table-responsive-wrapper {
+        overflow-x: auto; /* Allows table to scroll horizontally */
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .profile-container h1 {
+        font-size: 22px;
+    }
+    .user-details h2, .transaction-history-title {
+        font-size: 18px;
+    }
+     .user-details p, .cart-table {
+        font-size: 13px;
+    }
+    .logout-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}

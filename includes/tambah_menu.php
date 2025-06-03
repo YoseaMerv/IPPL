@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="text" name="nama_menu" id="nama_menu" required>
 
             <label for="harga">Harga (Rp):</label>
-            <input type="number" name="harga" id="harga" required>
+            <input type="number" name="harga" id="harga" min="0" required>
 
             <label for="gambar">Upload Gambar Menu:</label>
             <input type="file" name="gambar" id="gambar" accept="image/*" required>
